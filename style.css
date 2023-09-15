@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*! header start */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.logoBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuBox{
+    display: flex;
+    justify-content: center;
+}
+.menuBox ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.menuBox ul li{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+.menuBox ul li i{
+    font-size: 14px;
+    margin-top: 11px;
+    margin-left: 2px;
+}
+.iconBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconBox i{
+    margin: 10px;
+    font-size: 20px;
+}
+/*! header end */
+
+
+/*! container1 start */
+.container1{
+    display: flex;
+    background-color: #f0e0ff;
+    position: relative;
+    height: 650px;
+}
+.container1-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.container1-left div h3{
+    font-size: 35px;
+}
+.container1-left div h1{
+    font-size: 75px;
+}
+.container1-left div button{
+    width: 196px;
+    height: 57px;
+    background-color: #f0e0ff;
+    border: 1px solid black;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.container1-right{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1-right img{
+    background-position: center;
+    background-size: contain;
+    width: auto;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+
+}
+/*! container1 end */
