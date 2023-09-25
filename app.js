@@ -12,10 +12,39 @@ for (let i = 0; i < 8; i++) {
     let cardImg = document.createElement("div");
     cardImg.classList = "card-img";
     card.appendChild(cardImg);
-    
+
     let img = document.createElement("img");
     img.src = `./img/${i}.jpg`;
     cardImg.appendChild(img);
+
+    let buyBox = document.createElement("div");
+    buyBox.classList = "buy-box";
+    card.appendChild(buyBox);
+
+    var buyBoxHeart = document.createElement("a");
+    buyBoxHeart.classList = "buyBoxHeart";
+    buyBox.appendChild(buyBoxHeart);
+
+    var buyBoxHeartIcon = document.createElement("i");
+    buyBoxHeartIcon.classList = "fa-solid fa-heart";
+    buyBoxHeart.appendChild(buyBoxHeartIcon);
+
+    let yazi = document.createElement("p");
+    yazi.classList = "yazi";
+    yazi.innerText = "BUY NOW";
+    buyBox.appendChild(yazi);
+
+    let buyBoxLook = document.createElement("i");
+    buyBoxLook.classList = "fa-solid fa-eye";
+    buyBox.appendChild(buyBoxLook);
+
+
+    var sayi = 0;
+    var shoppingItem = document.querySelector(".shopping-item");
+    buyBoxHeart.addEventListener("click", ()=>{
+        sayi +=1;
+        shoppingItem.innerText = sayi;
+    });
     
     let cardBottom = document.createElement("div");
     cardBottom.classList = "card-bottom";
@@ -45,4 +74,5 @@ for (let i = 0; i < 8; i++) {
     cardBottom.appendChild(cardPrice);
     cardPrice.innerText = fiyat[i];
 }
+
 
