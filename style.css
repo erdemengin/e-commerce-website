@@ -3,11 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 16px;
+}
 /*! header start */
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 14px 30px 0;
     position: sticky;
     top: 0;
     z-index: 45;
@@ -17,6 +20,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 14px;
+
+}
+.logoBox img{
+    width: 6rem;
+    height: auto;
 }
 .menuBox{
     display: flex;
@@ -31,25 +40,26 @@
     display: flex;
     margin: auto;
     padding: 10px;
-    font-size: 20px;
-}
-.menuBox ul li i{
-    font-size: 14px;
-    margin-top: 11px;
-    margin-left: 2px;
+    font-size: 1rem;
 }
 .iconBox{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 0;
 }
 .iconBox i{
     cursor: pointer;
 }
-.iconBox div:nth-child(5) {
-    position: relative;
+.fa-bars{
+    display: none !important;
 }
-.iconBox div:nth-child(5) span{
+.iconBox div i{
+    font-size: 1rem;
+}
+.iconBox span{
     position: absolute;
     top: 0;
     right: 0;
@@ -67,6 +77,7 @@
     background-color: #f0e0ff;
     position: relative;
     height: 650px;
+    padding: 0 15px;
 }
 .container1-left{
     display: flex;
@@ -76,18 +87,18 @@
     justify-content: center;
 }
 .container1-left div h3{
-    font-size: 35px;
+    font-size: 2.5rem;
 }
 .container1-left div h1{
-    font-size: 75px;
+    font-size: 4.5rem;
 }
 .container1-left div button{
-    width: 196px;
-    height: 57px;
+    width: 16rem;
+    height: 4.5rem;
     background-color: #f0e0ff;
     border: 1px solid black;
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 .container1-right{
     position: relative;
@@ -101,7 +112,7 @@
     background-position: center;
     background-size: contain;
     width: auto;
-    height: 90%;
+    height: 30rem;
     position: absolute;
     bottom: 0;
 
@@ -131,7 +142,7 @@
 }
 .supportBox img{
     width: auto;
-    height: 50px;
+    height: 4rem;
     margin-bottom: 13px;
 }
 .supportBox img:hover{
@@ -179,7 +190,7 @@
     padding-left: 13px;
 }
 .supportWrap h5{
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 .supportWrap p{
     margin-bottom: 1rem;
@@ -205,15 +216,16 @@
 }
 .nav-item a{
     color: black;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
-    margin: 20px 35px;
+    margin: 1.3rem 2.1rem;
 }
 .card{
-    width: 300px;
-    height: 530px !important;
-    margin: 10px;
+    width: 22rem;
+    height: 29rem !important;
+    margin: 10px 10px 102px 10px;
+    
 }
 .card:hover .buy-box{
     display: flex;
@@ -227,10 +239,10 @@
     display: none;
     align-items: center;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 50px;
     z-index: 11111;
     position: absolute;
-    bottom: 150px;
+    bottom: 18px;
 }
 .buy-box i{
     cursor: pointer;
@@ -242,8 +254,8 @@
 .card-img img{
     background-size: cover;
     background-position: center;
-    width: 300px;
-    height: auto;
+    width: 22rem;
+    height: 29rem;
 }
 .card-bottom{
     text-align: center;
@@ -271,10 +283,16 @@
 }
 .imgBox{
     margin: 10px;
+    width: 20rem;
+    height: auto;
+}
+.imgBox img{
+    width: 20rem;
+    height: auto;
 }
 .container4 h2{
-    margin-bottom: 55px;
-    margin-top: 60px;
+    margin-bottom: 33px;
+    margin-top: 48px;
     text-align: center;
 }
 .imageContainer-bottom{
@@ -282,7 +300,7 @@
     position: absolute;
     z-index: 5;
     bottom: 0;
-    left: 60px;
+    left: 46px;
     background: white;
     padding: 10px;
 }
@@ -291,7 +309,7 @@
     color: black;
 }
 .imageContainer-bottom h3 a{
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 /*! container4 end */
 
@@ -299,18 +317,18 @@
 /*! footer start */
 footer{
     background: #f6f6f8;
-    padding: 150px 0;
+    padding: 50px 0;
 }
 .footer-area{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 2rem;
 }
 .subscrible{
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 .subscrible input{
     background: transparent;
@@ -460,3 +478,143 @@ footer{
 }
 
 /*! sepet end */
+
+
+/*? mobile start */
+@media (max-width:1038px) {
+    .imgBox, .imgBox img{
+        width: 15rem;
+    } 
+    .imageContainer-bottom{
+        width: 10rem !important;
+        height: 5rem !important;
+    }
+    .imageContainer-bottom h3 a{
+        font-size: 1rem;
+    }
+}
+@media (max-width:930px) {
+    .footer-area{
+        font-size: 10px;
+    }
+    .subscrible{
+        margin-bottom: 16px
+    }
+}
+@media (max-width:840px) {
+    html{
+        font-size: 12px;
+    }
+}
+@media (max-width:800px) {
+    html{
+        font-size: 11px;
+    }
+    .subscrible{
+        margin-bottom: 3px;
+    }
+}
+@media (max-width:708px) {
+    .fa-bars{
+        display: flex !important;
+        font-size: 1.5rem;
+        margin-top: 11px;
+        margin-right: -18px;
+    }
+    .container4-card{
+        flex-direction: column;
+    }
+    .imgBox{
+        width: 30rem;
+    }
+    .imgBox img{
+        width: 30rem;
+    }
+    .imageContainer-bottom{
+        left: 62px;
+    }
+}
+.imageContainer-bottom{
+    width: 18rem;
+    height: 8rem;
+}
+.imageContainer-bottom h3 a{
+    font-size: 1.3rem;
+}
+@media (max-width:650px) {
+    html{
+        font-size: 10px;
+    }
+    .carousel-inner {
+        height: 300px;
+    }
+    .container1-left div h1{
+        margin-bottom: 300px;
+    }
+    .container1-right img{
+        bottom: 35rem;
+        height: 25rem;
+    }
+    .container2{
+        margin: 45px;
+        padding: 0;
+    }
+    .rowBox{
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+    }
+}
+@media (max-width:534px) {
+    .footer-area{
+        flex-direction: column;
+        padding: 0;
+    }
+    .footerLogo{
+        width: auto;
+        height: 6rem;
+    }
+    .footerLogo img{
+        width: auto;
+        height: 6rem;
+    }
+    .footerLogo p{
+        text-align: center;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .footer-area div p{
+        text-align: center !important;
+        font-size: 13px !important;
+    }
+    .footer-area div{
+        margin: 40px 0;
+    }
+    .footer-area h5{
+        font-size: 20px;
+    }
+    .subscrible{
+        text-align: center;
+    }
+}
+@media (max-width:465px) {
+    .menuBox{
+        display: none;
+    }
+    .iconBox{
+        margin-top: -5px;
+        margin-right: 37px;
+    }
+}
+    
+@media (max-width:320px) {
+    .nav-item a{
+        margin: 1.3rem 0.7rem;
+    }
+}
+
+
+
+
+
+/*? mobile end */
